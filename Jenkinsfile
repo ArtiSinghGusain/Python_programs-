@@ -2,30 +2,15 @@ pipeline {
     agent any
 
     stages {
-
-        stage('Checkout') {
+        stage('Run Python Files') {
             steps {
-                checkout scm
+                bat '''
+                for %%f in (String\\*.py) do (
+                    echo Running %%f
+                    python "%%f"
+                )
+                '''
             }
         }
-
-        stage('Python Version') {
-            steps {
-                bat 'python --version'
-            }
-        }
-
-        stage('Git Version') {
-            steps {
-                bat 'git --version'
-            }
-        }
-
-        stage('Pytest Version') {
-            steps {
-                bat 'pytest --version'
-            }
-        }
-
     }
 }
