@@ -17,3 +17,7 @@ st = "python"
 reverse_st = st[::-1]
 print(reverse_st)
 
+
+
+
+
