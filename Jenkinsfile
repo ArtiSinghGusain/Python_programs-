@@ -5,7 +5,7 @@ pipeline {
         stage('Run Python Files') {
             steps {
                 bat '''
-                for %%f in (String\\*.py) do (
+                for /R %%f in (*.py) do (
                     echo Running %%f
                     python "%%f"
                 )
