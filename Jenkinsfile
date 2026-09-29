@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Run Python Files') {
+        stage('Run Python Files and testt ') {
             steps {
                 bat '''
                 for /R %%f in (*.py) do (
