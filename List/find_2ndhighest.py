@@ -1,8 +1,8 @@
 
-list1 = [69,1,3,4,622,4,6,66,7,68]
+list1 = [69,1,3,4,622,620,4,6,66,7,68]
 
-highest_num = 0
-second_highest_num = 0
+highest_num = list1[0]
+second_highest_num = list1[0]
 
 for i in list1:
     if i >highest_num:

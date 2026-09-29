@@ -2,8 +2,8 @@
 
 name = "madam"
 
-first_index = 0
-last_index = len(name)-1
+first_index = 0 #0 , 1 , 2,
+last_index = len(name)-1 #4, 3, 2
 
 while first_index < last_index:
         if name[first_index] != name[last_index]:
